@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<div id="container" style="width:320px">
+	<meta charset="utf-8">
+	<title>Radio Atan</title>
+	
+	<!--REQUIRED FILES-->
+		<link rel="stylesheet" href="plate/css/plate.css">
+		<!--[if lte IE 7]><script src="plate/js/json2.js"></script><![endif]-->
+		<script src="plate/js/jquery.js"></script>
+		<script src="plate/js/jquery-ui.js"></script>
+		<script src="plate/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="plate/js/jquery.cookie.js"></script>
+		<script src="plate/js/perfect-scrollbar.js"></script>
+		<script src="plate/js/jquery.rotate.js"></script>
+		<script src="plate/js/plate.js"></script>
+	<!--REQUIRED FILES-->
+	<!--REQUIRED SCRIPT-->
+	<script>
+		$(function(){
+			$('.demoPlate.pl1').plate({
+				playlist:[
+			{file:'http://146.185.253.127:8000/;',artist:'Radio Atan', title:'Afghan Radio'},
+		],
+		controls: ['cover', 'vinyl', 'trackInfo', 'progress', 'play', 'buyButton'],
+		coverEffects: ['opacity'],
+		coverAnimSpeed: 300,
+		skin: 'light',
+		width: 320,
+		playlistHeight: 200,
+		plateDJ: true,
+		changeTrackChangePlate: true,
+		onStart: {
+			pause: true,
+			repeat: false,
+			random: false,
+			volume: 100,
+			speed: 1
+		},
+		useCookies: false,
+		preloadFirstTrack: true
+			});
+		});			
+	</script>
+	<noscript>Sorry, you need a browser which supports <a href="http://musicstorm.org/#nojs">JavaScript</a></noscript>
+	<!--REQUIRED SCRIPT-->
+
+</head>
+<body>
+	
+	
+	<div class="demoLight">
+		<div class="demoPlate pl1"></div>
+	</div>
+
+	
+
+	<!--from demo-->
+		<link rel="stylesheet" href="demo_files/css/plateDemo.css">
+		<script src="demo_files/js/jquery.easing.1.3.js"></script>
+		<script src="demo_files/js/plateDemo.js"></script>
+	<!--from demo-->	
+</body>
+</html>
